@@ -72,33 +72,33 @@
             <h3 class="display-9">申请</h3>
             <hr>
             <ul>
-                <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener" v-text="$t('home.link.homepage')">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" v-text="$t('home.link.stackoverflow')">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" v-text="$t('home.link.bugtracker')">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" v-text="$t('home.link.chat')">JHipster public chat room</a></li>
-                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" v-text="$t('home.link.follow')">follow @java_hipster on Twitter</a></li>
+                <li><a href="/apply/experience" target="_blank" rel="noopener" >MSCS@CMU项目申请经验</a></li>
+                <li><a href="/apply/experience" target="_blank" rel="noopener" >Meng@UCB,一年制meng是否值得读</a></li>
+                <li><a href="/apply/experience" target="_blank" rel="noopener" >东海岸与西海岸，不仅是时区差异</a></li>
+                <li><a href="/apply/experience" target="_blank" rel="noopener" >19fall CSphD申请感想</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">测试你的申请成功几率</a></li>
             </ul>
         </div>
         <div class="col-md-4">
             <h3 class="display-9">院校</h3>
             <hr>
             <ul>
-                <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener" v-text="$t('home.link.homepage')">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" v-text="$t('home.link.stackoverflow')">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" v-text="$t('home.link.bugtracker')">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" v-text="$t('home.link.chat')">JHipster public chat room</a></li>
-                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" v-text="$t('home.link.follow')">follow @java_hipster on Twitter</a></li>
+                <li><a href="/apply/university" target="_blank" rel="noopener" >院校巡礼:Stanford</a></li>
+                <li><a href="/apply/university" target="_blank" rel="noopener" >UCBerkeley申请情况分析</a></li>
+                <li><a href="/apply/university" target="_blank" rel="noopener" >CS@CMU项目介绍与近年数据</a></li>
+                <li><a href="/apply/university" target="_blank" rel="noopener" >2020MIT金工申请前景</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" >测试你的申请成功几率</a></li>
             </ul>
         </div>
         <div class="col-md-4">
             <h3 class="display-9">定位</h3>
             <hr>
             <ul>
-                <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener" v-text="$t('home.link.homepage')">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" v-text="$t('home.link.stackoverflow')">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" v-text="$t('home.link.bugtracker')">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" v-text="$t('home.link.chat')">JHipster public chat room</a></li>
-                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" v-text="$t('home.link.follow')">follow @java_hipster on Twitter</a></li>
+                <li><a href="/apply/consult" target="_blank" rel="noopener" >CS@NJU 4.6/5.0+110+330 2020US选校</a></li>
+                <li><a href="/apply/consult" target="_blank" rel="noopener" >Top2 111+333 两段科研经历</a></li>
+                <li><a href="/apply/consult" target="_blank" rel="noopener" >SE@NJU 4.65/5 一般TOEFL,gre 一篇sci二区</a></li>
+                <li><a href="/apply/consult" target="_blank" rel="noopener" >Top2 3.7/4 MSRA实习+Upenn暑研</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" >测试你的申请成功几率</a></li>
             </ul>
         </div>
     </div>

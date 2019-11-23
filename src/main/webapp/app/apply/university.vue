@@ -2,8 +2,8 @@
   <div>
     <b-row>
     <b-col><h2>
-        <b-button variant="info" class="pull-right" v-b-modal.modal-1>发布我的经历</b-button>
-        <b-modal id="modal-1" title="你的留学经验">
+        <b-button variant="info" class="pull-right" v-b-modal.modal-1>发布院校信息</b-button>
+        <b-modal id="modal-1" title="院校分享">
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
             <b-form-group
                 id="input-group-1"
@@ -20,17 +20,17 @@
             </b-form-group>
             <b-form-group
                 id="input-group-4"
-                label="Name:"
+                label="School:"
                 label-for="input-4"
             >
                 <b-form-input
                 id="input-4"
-                v-model="form.name"
+                v-model="form.school"
                 required
-                placeholder="Enter name"
+                placeholder="Enter school"
                 ></b-form-input>
             </b-form-group>
-            <b-form-group id="input-group-2" label="Content:" label-for="input-2">
+            <b-form-group id="input-group-2" label="Introduction:" label-for="input-2">
                 <b-form-input
                 id="input-2"
                 v-model="form.content"
@@ -39,11 +39,11 @@
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-3" label="Country:" label-for="input-3">
+            <b-form-group id="input-group-3" label="Major:" label-for="input-3">
                 <b-form-select
                 id="input-3"
-                v-model="form.country"
-                :options="countries"
+                v-model="form.major"
+                :options="majors"
                 required
                 ></b-form-select>
             </b-form-group>
@@ -64,25 +64,32 @@
     data() {
       return {
         items: [
-          { title: "40", last_reply_time: 'Dickerson', author: 'Macdonald' },
-          { title: "21", last_reply_time: 'Larsen', author: 'Shaw' },
-          { title: "15", last_reply_time: 'Geneva', author: 'Wilson' },
-          { title: "16", last_reply_time: 'Jami', author: 'Carney' }
+          { title: "院校巡礼:Stanford", last_reply_time: '2019.11.23', author: 'Macdonald' },
+          { title: "UCBerkeley申请情况分析", last_reply_time: '2019.11.23', author: 'Shaw' },
+          { title: "CS@CMU项目介绍与近年数据", last_reply_time: '2019.11.23', author: 'Wilson' },
+          { title: "2020MIT金工申请前景", last_reply_time: '2019.11.23', author: 'Carney' }
         ],
         form: {
           title: '',
           conetnt: '',
-          name:'',
-          country: null,
+          school:'',
+          major: null,
         },
-        countries: [{ text: 'Select One', value: null }, 'US', 'UK', 'EU', 'AUS','JAP'],
+        majors: [{ text: 'Select The Major', value: null }, '理学', '商科', '社科文学', '信息','工科'],
         show: true
       }
     },
-    methods: {
-      onSubmit(evt) {
-        this.items.push(this.form.title,"2019",this.form.name);
+    created(){
+        var name1 =sessionStorage.getItem('name');
+        var title1 =sessionStorage.getItem('title');
+        this.items.push({title:title1,last_reply_time:"2019.11.24",author:name1})
         console.log(this.items);
+    },
+    methods: {
+      onSubmit() {
+        console.log(this.items);
+        sessionStorage.setItem('name', this.form.name)
+        sessionStorage.setItem('title',this.form.title)
       },
       onReset(evt) {
         evt.preventDefault()
