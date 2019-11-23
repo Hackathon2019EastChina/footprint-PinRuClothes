@@ -3,9 +3,9 @@
     <div class="home row">
         <div class="col-md-9">
             <br>
-            <h1 class="display-4">&nbsp;前行之迹</h1>
+            <h1 class="display-4">&nbsp;&nbsp;&nbsp;前行之迹</h1>
             <br>
-            <p class="display-3">&nbsp;&nbsp;&nbsp;你的征程，从这里起航：the steps of your future in China</p>
+            <p class="display-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你的征程，从这里起航：the steps of your future in China</p>
             <b-container class="bv-example-row">
             <b-row align-h="center">
             <b-col>
