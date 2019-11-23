@@ -3,9 +3,9 @@
     <div class="home row">
         <div class="col-md-9">
             <br>
-            <h1 class="display-4">&nbsp;渡洋之行</h1>
+            <h1 class="display-4">&nbsp;&nbsp;&nbsp;渡洋之行</h1>
             <br>
-            <p class="display-3">&nbsp;&nbsp;&nbsp;你的梦想，从这里开始：the journey to the other side</p>
+            <p class="display-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你的梦想，从这里开始：the journey to the other side</p>
             <b-container class="bv-example-row">
             <b-row align-h="center">
             <b-col>
@@ -72,8 +72,8 @@
             <h3 class="display-9">申请</h3>
             <hr>
             <ul>
-                <li><a href="/apply/experience" target="_blank" rel="noopener" >MSCS@CMU项目申请经验</a></li>
-                <li><a href="/apply/experience" target="_blank" rel="noopener" >Meng@UCB,一年制meng是否值得读</a></li>
+                <li><a href="/apply/article" target="_blank" rel="noopener" >MSCS@CMU项目申请经验</a></li>
+                <li><a href="/apply/article" target="_blank" rel="noopener" >Meng@UCB,一年制meng是否值得读</a></li>
                 <li><a href="/apply/experience" target="_blank" rel="noopener" >东海岸与西海岸，不仅是时区差异</a></li>
                 <li><a href="/apply/experience" target="_blank" rel="noopener" >19fall CSphD申请感想</a></li>
                 <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">测试你的申请成功几率</a></li>
