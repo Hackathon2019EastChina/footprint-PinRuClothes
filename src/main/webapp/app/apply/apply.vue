@@ -72,33 +72,33 @@
             <h3 class="display-9">申请</h3>
             <hr>
             <ul>
-                <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener" v-text="$t('home.link.homepage')">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" v-text="$t('home.link.stackoverflow')">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" v-text="$t('home.link.bugtracker')">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" v-text="$t('home.link.chat')">JHipster public chat room</a></li>
-                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" v-text="$t('home.link.follow')">follow @java_hipster on Twitter</a></li>
+                <li><a href="/apply/experience" target="_blank" rel="noopener" >JHipster homepage</a></li>
+                <li><a href="/apply/experience" target="_blank" rel="noopener" >JHipster on Stack Overflow</a></li>
+                <li><a href="/apply/experience" target="_blank" rel="noopener" >JHipster bug tracker</a></li>
+                <li><a href="/apply/experience" target="_blank" rel="noopener" >JHipster public chat room</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">测试你的申请成功几率</a></li>
             </ul>
         </div>
         <div class="col-md-4">
             <h3 class="display-9">院校</h3>
             <hr>
             <ul>
-                <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener" v-text="$t('home.link.homepage')">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" v-text="$t('home.link.stackoverflow')">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" v-text="$t('home.link.bugtracker')">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" v-text="$t('home.link.chat')">JHipster public chat room</a></li>
-                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" v-text="$t('home.link.follow')">follow @java_hipster on Twitter</a></li>
+                <li><a href="/apply/university" target="_blank" rel="noopener" >JHipster homepage</a></li>
+                <li><a href="/apply/university" target="_blank" rel="noopener" >JHipster on Stack Overflow</a></li>
+                <li><a href="/apply/university" target="_blank" rel="noopener" >JHipster bug tracker</a></li>
+                <li><a href="/apply/university" target="_blank" rel="noopener" >JHipster bug tracker</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" >测试你的申请成功几率</a></li>
             </ul>
         </div>
         <div class="col-md-4">
             <h3 class="display-9">定位</h3>
             <hr>
             <ul>
-                <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener" v-text="$t('home.link.homepage')">JHipster homepage</a></li>
-                <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" v-text="$t('home.link.stackoverflow')">JHipster on Stack Overflow</a></li>
-                <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" v-text="$t('home.link.bugtracker')">JHipster bug tracker</a></li>
-                <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" v-text="$t('home.link.chat')">JHipster public chat room</a></li>
-                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" v-text="$t('home.link.follow')">follow @java_hipster on Twitter</a></li>
+                <li><a href="/apply/consult" target="_blank" rel="noopener" >JHipster homepage</a></li>
+                <li><a href="/apply/consult" target="_blank" rel="noopener" >JHipster on Stack Overflow</a></li>
+                <li><a href="/apply/consult" target="_blank" rel="noopener" >JHipster bug tracker</a></li>
+                <li><a href="/apply/consult" target="_blank" rel="noopener" >JHipster public chat room</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" >测试你的申请成功几率</a></li>
             </ul>
         </div>
     </div>
