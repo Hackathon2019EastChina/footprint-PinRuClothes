@@ -11,24 +11,19 @@
 Developement Ribbon
 ========================================================================== */
     .ribbon {
-        background-color: rgba(170, 0, 0, 0.5);
-        left: -3.5em;
-        moz-transform: rotate(-45deg);
-        ms-transform: rotate(-45deg);
-        o-transform: rotate(-45deg);
-        webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
+        background-color: rgba(170, 0, 0, 0);
+        left: 2em;
         overflow: hidden;
         position: absolute;
-        top: 40px;
+        top: 50px;
         white-space: nowrap;
-        width: 15em;
+        width: 90em;
         z-index: 9999;
         pointer-events: none;
         opacity: 0.75;
     }
 
-    .ribbon a {
+    .ribbon a { 
         color: #fff;
         display: block;
         font-weight: 400;
@@ -36,7 +31,7 @@ Developement Ribbon
         padding: 10px 50px;
         text-align: center;
         text-decoration: none;
-        text-shadow: 0 0 5px #444;
+        text-shadow: 0 0 5px rgb(32, 4, 4);
         pointer-events: none;
     }
 

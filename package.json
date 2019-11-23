@@ -15,7 +15,7 @@
     "bootstrap": "4.3.1",
     "bootstrap-vue": "2.0.0-rc.26",
     "date-fns": "2.0.0-beta.2",
-    "swagger-ui": "2.2.10",
+    "swagger-ui": "^3.24.3",
     "vue": "2.6.10",
     "vue-class-component": "7.0.2",
     "vue-cookie": "1.1.4",
@@ -36,7 +36,7 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "autoprefixer": "9.4.9",
     "base-href-webpack-plugin": "2.0.0",
-    "browser-sync": "2.26.3",
+    "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "2.2.2",
     "copy-webpack-plugin": "5.0.0",
     "css-loader": "2.1.0",
@@ -45,7 +45,7 @@
     "generator-jhipster-vuejs": "1.2.0",
     "html-webpack-plugin": "3.2.0",
     "husky": "1.3.1",
-    "jest": "23.6.0",
+    "jest": "^25.0.0",
     "jest-junit": "6.3.0",
     "jest-serializer-vue": "2.0.2",
     "jest-sonar-reporter": "2.0.0",
@@ -78,7 +78,7 @@
     "vue-jest": "3.0.3",
     "vue-loader": "15.7.0",
     "vue-template-compiler": "2.6.10",
-    "webpack": "4.29.5",
+    "webpack": "^4.29.5",
     "webpack-bundle-analyzer": "3.3.2",
     "webpack-cli": "3.2.3",
     "webpack-dev-server": "3.2.1",
@@ -126,5 +126,16 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": ".postcssrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caposerenity/jhipster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/caposerenity/jhipster/issues"
+  },
+  "homepage": "https://github.com/caposerenity/jhipster#readme"
 }
