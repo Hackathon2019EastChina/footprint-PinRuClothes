@@ -25,6 +25,9 @@ const JhiAuditsComponent = () => import('../admin/audits/audits.vue');
 const JhiMetricsComponent = () => import('../admin/metrics/metrics.vue');
 const ApplyComponent = () => import('../apply/apply.vue');
 const DomesticComponent = () => import('../domestic/domestic.vue');
+const ExperienceComponent = () => import('../apply/experience.vue');
+const ConsultComponent = () => import('../apply/consult.vue');
+const UniversityComponent = () => import('../apply/university.vue');
 
 /* tslint:disable */
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
@@ -153,6 +156,21 @@ export default new Router({
       path: '/domestic',
       name: 'DomesticComponent',
       component: DomesticComponent,
+    },
+    {
+      path: '/apply/consult',
+      name: 'ConsultComponent',
+      component: ConsultComponent,
+    },
+    {
+      path: '/apply/experience',
+      name: 'ExperienceComponent',
+      component: ExperienceComponent,
+    },
+    {
+      path: '/apply/university',
+      name: 'UniversityComponent',
+      component: UniversityComponent,
     },
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
   ]
