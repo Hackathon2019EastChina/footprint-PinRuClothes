@@ -4,8 +4,9 @@
     <b-col><h2>
         <b-button variant="info" class="pull-right" v-b-modal.modal-1>我要求助</b-button>
         <b-modal id="modal-1" title="请填写你的信息">
-        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-            <b-form-group
+        <b-form @submit="onSubmit"  @reset="onReset" v-if="show">
+<!--           @submit="onSubmit"
+ -->            <b-form-group
                 id="input-group-1"
                 label="Title:"
                 label-for="input-1"
@@ -119,16 +120,16 @@
       }
     },
    created(){
-        var name1 =sessionStorage.getItem('name');
-        var title1 =sessionStorage.getItem('title');
-        this.items.push({title:title1,last_reply_time:"2019.11.24",author:name1})
-        console.log(this.items);
+        //this.items=JSON.parse(sessionStorage.getItem('items'))
+        //console.log(JSON.stringify(this.items[0]))
     },
     methods: {
-      onSubmit() {
-        console.log(this.items);
-        sessionStorage.setItem('name', this.form.name)
-        sessionStorage.setItem('title',this.form.title)
+      onSubmit(evt) {
+        evt.preventDefault()
+        this.items.push({title:this.form.title,last_reply_time:"2019.11.24",author:this.form.name})
+        sessionStorage.setItem('items',JSON.stringify(this.items[this.items.length()-1]))
+                alert(sessionStorage.getItem('items'))
+
       },
       onReset(evt) {
         evt.preventDefault()
