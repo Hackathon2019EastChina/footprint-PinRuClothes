@@ -72,8 +72,8 @@
             <h3 class="display-9">申请</h3>
             <hr>
             <ul>
-                <li><a href="/apply/experience" target="_blank" rel="noopener" >MSCS@CMU项目申请经验</a></li>
-                <li><a href="/apply/experience" target="_blank" rel="noopener" >Meng@UCB,一年制meng是否值得读</a></li>
+                <li><a href="/apply/article" target="_blank" rel="noopener" >MSCS@CMU项目申请经验</a></li>
+                <li><a href="/apply/article" target="_blank" rel="noopener" >Meng@UCB,一年制meng是否值得读</a></li>
                 <li><a href="/apply/experience" target="_blank" rel="noopener" >东海岸与西海岸，不仅是时区差异</a></li>
                 <li><a href="/apply/experience" target="_blank" rel="noopener" >19fall CSphD申请感想</a></li>
                 <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">测试你的申请成功几率</a></li>
