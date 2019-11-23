@@ -137,7 +137,7 @@
     background-color: rgba(236, 246, 252, 0.87)}
 
 .display-4{
-    font-weight:bold;
+    font-weight:normal;
 }
 
 .display-3{
@@ -145,6 +145,6 @@
 }
 
 .display-9{
-    font-weight:bold;
+    font-weight:normal;
 }
 </style>
