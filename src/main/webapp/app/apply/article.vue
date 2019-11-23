@@ -39,6 +39,12 @@
                     </p>
                 </b-col>
             </b-row>
+            <b-input-group prepend="您的评论" class="mt-3">
+                <b-form-input></b-form-input>
+                <b-input-group-append>
+                <b-button variant="info">Button</b-button>
+                </b-input-group-append>
+            </b-input-group>
         </b-container>
          <footer id="footer" class="bg-white py-5 font-size-14">
     <div class="container">
