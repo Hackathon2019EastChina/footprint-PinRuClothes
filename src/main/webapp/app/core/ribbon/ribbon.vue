@@ -31,7 +31,7 @@ Developement Ribbon
         padding: 10px 50px;
         text-align: center;
         text-decoration: none;
-        text-shadow: 0 0 5px rgb(32, 4, 4);
+        text-shadow: 0 0 5px rgb(255, 255, 255);
         pointer-events: none;
     }
 
