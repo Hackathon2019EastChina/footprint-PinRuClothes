@@ -64,10 +64,10 @@
     data() {
       return {
         items: [
-          { title: "40", last_reply_time: 'Dickerson', author: 'Macdonald' },
-          { title: "21", last_reply_time: 'Larsen', author: 'Shaw' },
-          { title: "15", last_reply_time: 'Geneva', author: 'Wilson' },
-          { title: "16", last_reply_time: 'Jami', author: 'Carney' }
+          { title: "院校巡礼:Stanford", last_reply_time: '2019.11.23', author: 'Macdonald' },
+          { title: "UCBerkeley申请情况分析", last_reply_time: '2019.11.23', author: 'Shaw' },
+          { title: "CS@CMU项目介绍与近年数据", last_reply_time: '2019.11.23', author: 'Wilson' },
+          { title: "2020MIT金工申请前景", last_reply_time: '2019.11.23', author: 'Carney' }
         ],
         form: {
           title: '',
@@ -79,10 +79,17 @@
         show: true
       }
     },
-    methods: {
-      onSubmit(evt) {
-        this.items.push(this.form.title,"2019",this.form.name);
+    created(){
+        var name1 =sessionStorage.getItem('name');
+        var title1 =sessionStorage.getItem('title');
+        this.items.push({title:title1,last_reply_time:"2019.11.24",author:name1})
         console.log(this.items);
+    },
+    methods: {
+      onSubmit() {
+        console.log(this.items);
+        sessionStorage.setItem('name', this.form.name)
+        sessionStorage.setItem('title',this.form.title)
       },
       onReset(evt) {
         evt.preventDefault()

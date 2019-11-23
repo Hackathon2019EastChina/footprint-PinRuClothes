@@ -64,10 +64,10 @@
     data() {
       return {
         items: [
-          { title: "40", last_reply_time: 'Dickerson', author: 'Macdonald' },
-          { title: "21", last_reply_time: 'Larsen', author: 'Shaw' },
-          { title: "15", last_reply_time: 'Geneva', author: 'Wilson' },
-          { title: "16", last_reply_time: 'Jami', author: 'Carney' }
+          { title: "MSCS@CMU项目申请经验", last_reply_time: '2019.11.23', author: 'Macdonald' },
+          { title: "Meng@UCB,一年制meng是否值得读", last_reply_time: '2019.11.22', author: 'Shaw' },
+          { title: "东海岸与西海岸，不仅是时区差异", last_reply_time: '2019.11.8', author: 'Wilson' },
+          { title: "19fall CSphD申请感想", last_reply_time: '2019.11.4', author: 'Carney' }
         ],
         form: {
           title: '',
@@ -82,7 +82,7 @@
     created(){
         var name1 =sessionStorage.getItem('name');
         var title1 =sessionStorage.getItem('title');
-        this.items.push({title:title1,last_reply_time:name1,author:name1})
+        this.items.push({title:title1,last_reply_time:"2019.11.24",author:name1})
         console.log(this.items);
     },
     methods: {
