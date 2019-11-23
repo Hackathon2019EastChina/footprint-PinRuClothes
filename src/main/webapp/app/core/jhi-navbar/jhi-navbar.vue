@@ -6,7 +6,7 @@
             </b-navbar-toggle>
             <b-navbar-brand class="logo float-left" b-link to="/">
                 <span class="logo-img"></span>
-                <span v-text="$t('global.title')" class="navbar-title">app</span> <span class="navbar-version">{{version}}</span>
+                <span v-text="$t('global.title')" class="navbar-title">行迹</span> <span class="navbar-version">v1.00</span>
             </b-navbar-brand>
         </div>
         <b-collapse is-nav id="header-tabs">
@@ -30,7 +30,7 @@
                         <font-awesome-icon icon="user" />
                         <span>留学申请</span>
                     </b-dropdown-item>
-                    <b-dropdown-item to="/admin/user-management">
+                    <b-dropdown-item to="/domestic">
                         <font-awesome-icon icon="user" />
                         <span>保研版块</span>
                     </b-dropdown-item>

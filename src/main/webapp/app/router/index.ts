@@ -24,6 +24,8 @@ const JhiLogsComponent = () => import('../admin/logs/logs.vue');
 const JhiAuditsComponent = () => import('../admin/audits/audits.vue');
 const JhiMetricsComponent = () => import('../admin/metrics/metrics.vue');
 const ApplyComponent = () => import('../apply/apply.vue');
+const DomesticComponent = () => import('../domestic/domestic.vue');
+
 /* tslint:disable */
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
@@ -146,7 +148,12 @@ export default new Router({
       path: '/apply',
       name: 'ApplyComponent',
       component: ApplyComponent,
-    }
+    },
+    {
+      path: '/domestic',
+      name: 'DomesticComponent',
+      component: DomesticComponent,
+    },
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
   ]
 });

@@ -30,11 +30,11 @@
                 <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener" v-text="$t('home.link.stackoverflow')">JHipster on Stack Overflow</a></li>
                 <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener" v-text="$t('home.link.bugtracker')">JHipster bug tracker</a></li>
                 <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener" v-text="$t('home.link.chat')">JHipster public chat room</a></li>
-                <li><a href="https://twitter.com/java_hipster" target="_blank" rel="noopener" v-text="$t('home.link.follow')">follow @java_hipster on Twitter</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener" v-text="$t('home.link.follow')">follow @java_hipster on Twitter</a></li>
             </ul>
 
             <p>
-                <span v-text="$t('home.like')">If you like us, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener" v-text="$t('home.github')">GitHub</a>!
+                <span v-text="$t('home.like')">If you like us, don't forget to give us a star on</span> <a href="https://github.com/caposerenity/jhipster/tree/master/src" target="_blank" rel="noopener" v-text="$t('home.github')">GitHub</a>!
             </p>
         </div>
     </div>
