@@ -75,14 +75,21 @@
           name:'',
           country: null,
         },
-        countries: [{ text: 'Select One', value: null }, 'US', 'UK', 'EU', 'AUS','JAP'],
+        countries: [{ text: 'Select The Country', value: null }, 'US', 'UK', 'EU', 'AUS','JAP'],
         show: true
       }
     },
-    methods: {
-      onSubmit(evt) {
-        this.items.push(this.form.title,"2019",this.form.name);
+    created(){
+        var name1 =sessionStorage.getItem('name');
+        var title1 =sessionStorage.getItem('title');
+        this.items.push({title:title1,last_reply_time:name1,author:name1})
         console.log(this.items);
+    },
+    methods: {
+      onSubmit() {
+        console.log(this.items);
+        sessionStorage.setItem('name', this.form.name)
+        sessionStorage.setItem('title',this.form.title)
       },
       onReset(evt) {
         evt.preventDefault()
