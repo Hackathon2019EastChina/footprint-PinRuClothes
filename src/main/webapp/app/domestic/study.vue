@@ -1,89 +1,97 @@
 <template>
-    <div id="bg">
-    <div class="home row">
-        <div class="col-md-10">
-            <br>
-            <h1 class="display-4">&nbsp;&nbsp;&nbsp;WELCOME TO 行迹!</h1>
-            <br>
-            <p class="display-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎在这里，成为最好的你自己：be the best of yourself</p>
+<div id="bg">
+    <b-row>
+    <b-col>
+      <h2 class="down1">前行之迹：升学考研</h2>
+      <h2>
+        <b-button variant="info" class="pull-right down2" v-b-modal.modal-1>我要求助</b-button>
+        <b-modal id="modal-1" title="请填写你的信息">
+        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+            <b-form-group
+                id="input-group-1"
+                label="Title:"
+                label-for="input-1"
+                description="It will be shown to others."
+            >
+                <b-form-input
+                id="input-1"
+                v-model="form.title"
+                required
+                placeholder="Enter title"
+                ></b-form-input>
+            </b-form-group>
+            <b-form-group
+                id="input-group-4"
+                label="Name:"
+                label-for="input-4"
+            >
+                <b-form-input
+                id="input-4"
+                v-model="form.name"
+                required
+                placeholder="Enter name"
+                ></b-form-input>
+            </b-form-group>
 
-            <div id="login">
-                <div class="alert alert-success" v-if="authenticated">
-                    <span v-if="username" v-text="$t('home.logged.message', { 'username': username})"> "{&nbsp;&nbsp;&nbsp;{username}}"</span>
-                </div>
-                <div class="alert alert-warning" v-if="!authenticated">
-                    <span v-text="$t('global.messages.info.authenticated.prefix')">If you want to </span>
-                    <a class="alert-link" v-on:click="openLogin()" v-text="$t('global.messages.info.authenticated.link')">sign in</a><span v-html="$t('global.messages.info.authenticated.suffix')">, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>
-                </div>
-                <div class="alert alert-warning" v-if="!authenticated">
-                    <span v-text="$t('global.messages.info.register.noaccount')">You don't have an account yet?</span>&nbsp;
-                    <router-link class="alert-link" to="/register" v-text="$t('global.messages.info.register.link')">Register a new account</router-link>
-                </div>
-            </div>
+            <b-form-group id="input-group-3" label="Target Country:" label-for="input-3">
+                <b-form-select
+                id="input-3"
+                v-model="form.country"
+                :options="countries"
+                required
+                ></b-form-select>
+            </b-form-group>
 
-            <b-container class="bv-example-row">
-            <b-row align-h="center">
-            <b-col>
-                <hr width=120%>
-                    <b-carousel
-                        id="carousel-1"
-                        v-model="slide"
-                        :interval="4000"
-                        controls
-                        indicators
-                        background="#ababab"
-                        img-width="1024"
-                        img-height="480"
-                        style="text-shadow: 1px 1px 2px #333;"
-                        @sliding-start="onSlideStart"
-                        @sliding-end="onSlideEnd"
-                        >
-                        <!-- Text slides with image -->
-                        <b-carousel-slide
-                            caption="First slide"
-                            text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-                            img-src="https://picsum.photos/1024/480/?image=52"
-                        ></b-carousel-slide>
+            <b-form-group id="input-group-2" label="Other Content:" label-for="input-2">
+                <b-form-input
+                id="input-2"
+                v-model="form.content"
+                required
+                placeholder="Enter content"
+                ></b-form-input>
+            </b-form-group>
 
-                        <!-- Slides with custom text -->
-                        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-                            <h1>Hello world!</h1>
-                        </b-carousel-slide>
+            <b-form-group id="input-group-2" label="TOFEL:" label-for="input-2">
+                <b-form-input
+                id="input-2"
+                v-model="form.tofel"
+                required
+                placeholder="Enter TOFEL"
+                ></b-form-input>
+            </b-form-group>
+            <b-form-group id="input-group-2" label="GRE:" label-for="input-2">
+                <b-form-input
+                id="input-2"
+                v-model="form.gre"
+                required
+                placeholder="Enter GRE"
+                ></b-form-input>
+            </b-form-group>
+            <b-form-group id="input-group-2" label="GPA:" label-for="input-2">
+                <b-form-input
+                id="input-2"
+                v-model="form.gpa"
+                required
+                placeholder="Enter GPA"
+                ></b-form-input>
+            </b-form-group>
+            <b-form-group id="input-group-3" label="Your School:" label-for="input-3">
+                <b-form-select
+                id="input-3"
+                v-model="form.school"
+                :options="schools"
+                required
+                ></b-form-select>
+            </b-form-group>
 
-                        <!-- Slides with image only -->
-                        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-
-                        <!-- Slides with img slot -->
-                        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-                        <b-carousel-slide>
-                            <template v-slot:img>
-                            <img
-                                class="d-block img-fluid w-100"
-                                width="1024"
-                                height="480"
-                                src="https://picsum.photos/1024/480/?image=55"
-                                alt="image slot"
-                            >
-                            </template>
-                        </b-carousel-slide>
-
-                        <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-                        <b-carousel-slide caption="First slide" img-src="https://picsum.photos/1024/480/?image=10">
-                        </b-carousel-slide>
-                        </b-carousel>
-                        <br><br><br><br>
-                    <hr width=120%>
-                </b-col>
-            </b-row>
-            <b-row>
-            <p class="display-6">&nbsp;&nbsp;&nbsp;· 若你想要领略这个世界的广度，不妨到</p><b-link to="/apply" id="link" class="display-5">渡洋之行</b-link><p class="display-5">看看</p>
-            <p class="display-6">&nbsp;&nbsp;&nbsp;· 若你想要探索这片土地的深度，欢迎来</p><b-link href="../../domestic" id="link" class="display-5">前行之迹</b-link><p class="display-5">看看</p>
-            </b-row>
-            </b-container>
-        </div>
-    </div>
-
-    <footer id="footer" class="bg-white py-5 font-size-14">
+            <b-button type="submit" variant="primary">Submit</b-button>
+            <b-button type="reset" variant="danger">Reset</b-button>
+    </b-form>
+        </b-modal>
+    </h2>  </b-col>
+    </b-row>
+    <b-table striped hover :items="items" class="down"></b-table>
+     <footer id="footer" class="bg-white py-5 font-size-14">
     <div class="container">
         <div class="row">
             <dl class="col-4 col-md-2">
@@ -132,73 +140,85 @@
         </div>
     </div>
 </footer>
-    </div>
+  </div>
 </template>
 
-<script lang="ts" src="./home.component.ts">
-     export default {
-        data() {
-        return {
-            slide: 0,
-            sliding: null
-        }
+<script lang="ts" src="./domestic.component.ts">
+  export default {
+    data() {
+      return {
+        items: [
+          { title: "CS@NJU 4.6/5.0+110+330 2020US选校", last_reply_time: '2019.11.23', author: 'Macdonald' },
+          { title: "Top2 111+333 两段科研经历", last_reply_time: '2019.11.23', author: 'Shaw' },
+          { title: "SE@NJU 4.65/5 一般TOEFL,gre 一篇sci二区", last_reply_time: '2019.11.23', author: 'Wilson' },
+          { title: "Top2 3.7/4 MSRA实习+Upenn暑研", last_reply_time: '2019.11.23', author: 'Carney' }
+        ],
+        form: {
+          title: '',
+          conetnt: '',
+          name:'',
+          country: null,
+          gpa:null,
+          gre:null,
+          tofel:null,
+          school:null,
         },
-        methods: {
-        onSlideStart(slide) {
-            this.sliding = true
-        },
-        onSlideEnd(slide) {
-            this.sliding = false
-        }
-        }
-    }
+        countries: [{ text: 'Select One', value: null }, 'US', 'UK', 'EU', 'AUS','JAP'],
+        schools: [{ text: 'Select One', value: null }, 'OverSea', 'Top2', '985', '211','other schools'],
+        show: true
+      }
+    },
+   created(){
+        var name1 =sessionStorage.getItem('name');
+        var title1 =sessionStorage.getItem('title');
+        this.items.push({title:title1,last_reply_time:"2019.11.24",author:name1})
+        console.log(this.items);
+    },
+    methods: {
+      onSubmit() {
+        console.log(this.items);
+        sessionStorage.setItem('name', this.form.name)
+        sessionStorage.setItem('title',this.form.title)
+      },
+      onReset(evt) {
+        evt.preventDefault()
+        // Reset our form values
+        this.form.title = ''
+        this.form.content = ''
+        this.form.name = ''
+        this.form.country = null
+        // Trick to reset/clear native browser form validation state
+        this.show = false
+        this.$nextTick(() => {
+          this.show = true
+        })
+      }
+    },
+  }
 </script>
 
 <style scoped>
-#carousel-1{
-    margin:0 0 0 10%;
-    height: 60%;
-    width: 90%;
+.pull-right{
+    margin: 0 0 0 90%;
 }
 
-#bg{width: 100%;
-    height: 100%;
+.down{
+  margin-top:2%;
+}
+
+.down1{
+  font-weight:normal;
+  margin:3% 0 0 1%;
+}
+
+.down2{
+  margin:2% 0 0 1%;
+}
+
+#bg{
+  width: 100%;
+    height: 600px;
     position: relative;
-    background-color: rgba(236, 246, 252, 0.87)}
-
-.display-4{
-    font-weight:normal;
-}
-
-.display-3{
-    font-size:20px;
-}
-
-.display-5{
-    font-size:20px;
-    margin:-75px 0 0 0;
-        color: #000;
-
-}
-
-.display-6{
-    font-size:20px;
-    margin:-75px 0 0 5%;
-}
-
-.display-9{
-    font-weight:normal;
-}
-
-#link{
-    color: #000;
-}
-#link1{
-        font-size:20px;
-    margin:-75px 0 0 0;
-        color: #000;
-        }
-#login{
-    margin:0 0 0 4%;
+    background-color: rgba(236, 246, 252, 0.87)
 }
 </style>

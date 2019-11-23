@@ -29,6 +29,8 @@ const ExperienceComponent = () => import('../apply/experience.vue');
 const ConsultComponent = () => import('../apply/consult.vue');
 const UniversityComponent = () => import('../apply/university.vue');
 const ArticleComponent = () => import('../apply/article.vue');
+const WorkComponent = () => import('../domestic/work.vue');
+const StudyComponent = () => import('../domestic/study.vue');
 
 /* tslint:disable */
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
@@ -177,6 +179,16 @@ export default new Router({
       path: '/apply/article',
       name: 'ArticleComponent',
       component: ArticleComponent,
+    },
+    {
+      path: '/domestic/work',
+      name: 'WorkComponent',
+      component: WorkComponent,
+    },
+    {
+      path: '/domestic/study',
+      name: 'StudyComponent',
+      component: StudyComponent,
     },
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
   ]
