@@ -81,23 +81,16 @@
       }
     },
     created(){
-        var count1=sessionStorage.getItem('count')+1;
-        var name1 =sessionStorage.getItem('name');
-        var title1 =sessionStorage.getItem('title');
-        this.count=count1;
-        var i=0;
-        for(;i<count1;i++){
-        this.items.push({title:title1,last_reply_time:"2019.11.24",author:name1})
-        }
-        console.log(this.items);
-        console.log(name1)
+        if(sessionStorage.getItem('items')!=null)
+        this.items=JSON.parse(sessionStorage.getItem('items'))
     },
     methods: {
-      onSubmit() {
-        console.log(this.items);
-        sessionStorage.setItem('count',this.count)
-        sessionStorage.setItem('name', this.form.name)
-        sessionStorage.setItem('title',this.form.title)
+      onSubmit(evt) {
+        //evt.preventDefault()
+        this.items.push({title:this.form.title,last_reply_time:"2019.11.24",author:this.form.name})
+        var temp=this.items
+        sessionStorage.setItem('items',JSON.stringify(temp))
+        //alert(sessionStorage.getItem('items'))
       },
       onReset(evt) {
         evt.preventDefault()

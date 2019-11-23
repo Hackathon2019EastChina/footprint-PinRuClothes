@@ -120,16 +120,16 @@
       }
     },
    created(){
-        //this.items=JSON.parse(sessionStorage.getItem('items'))
-        //console.log(JSON.stringify(this.items[0]))
+        if(sessionStorage.getItem('items')!=null)
+        this.items=JSON.parse(sessionStorage.getItem('items'))
     },
     methods: {
       onSubmit(evt) {
-        evt.preventDefault()
+        //evt.preventDefault()
         this.items.push({title:this.form.title,last_reply_time:"2019.11.24",author:this.form.name})
-        sessionStorage.setItem('items',JSON.stringify(this.items[this.items.length()-1]))
-                alert(sessionStorage.getItem('items'))
-
+        var temp=this.items
+        sessionStorage.setItem('items',JSON.stringify(temp))
+        //alert(sessionStorage.getItem('items'))
       },
       onReset(evt) {
         evt.preventDefault()

@@ -14,7 +14,6 @@ entity Tag {
 }
 
 relationship ManyToOne {
-  Blog{user(login)} to User,
   Entry{blog(name)} to Blog
 }
 
