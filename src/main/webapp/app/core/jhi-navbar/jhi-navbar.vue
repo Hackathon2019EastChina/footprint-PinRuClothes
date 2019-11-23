@@ -18,6 +18,24 @@
                     </span>
                 </b-nav-item>
                 <b-nav-item-dropdown
+                    id="entry-menu"
+                    v-if="authenticated"
+                    :class="{'router-link-active': subIsActive('/entry')}"
+                    active-class="active" class="pointer">
+                    <span slot="button-content" class="navbar-dropdown-menu">
+                        <font-awesome-icon icon="th-list" />
+                        <span>版块</span>
+                    </span>
+                    <b-dropdown-item to="/apply">
+                        <font-awesome-icon icon="user" />
+                        <span>留学申请</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/admin/user-management">
+                        <font-awesome-icon icon="user" />
+                        <span>保研版块</span>
+                    </b-dropdown-item>
+                </b-nav-item-dropdown>
+                <b-nav-item-dropdown
                     id="entity-menu"
                     v-if="authenticated"
                     :class="{'router-link-active': subIsActive('/entity')}"
