@@ -33,14 +33,14 @@
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-3" label="Target Country:" label-for="input-3">
+            <!-- <b-form-group id="input-group-3" label="Target Country:" label-for="input-3">
                 <b-form-select
                 id="input-3"
                 v-model="form.country"
                 :options="countries"
                 required
                 ></b-form-select>
-            </b-form-group>
+            </b-form-group> -->
 
             <b-form-group id="input-group-2" label="Other Content:" label-for="input-2">
                 <b-form-input
@@ -127,7 +127,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="text-secondary">
-                    <p class="mb-1">Copyright © 2019 Pinru's Clothes. 当前呈现版本 1.0.0</p>
+                    <p class="mb-1">Copyright © 2019 Pinru's Clothes. 当前呈现版本 v1.0.0</p>
                     <p class="mb-1">
                         "我的代码怎么穿着品如的衣服"版权所有
                     </p>
@@ -148,10 +148,10 @@
     data() {
       return {
         items: [
-          { title: "CS@NJU 4.6/5.0+110+330 2020US选校", last_reply_time: '2019.11.23', author: 'Macdonald' },
-          { title: "Top2 111+333 两段科研经历", last_reply_time: '2019.11.23', author: 'Shaw' },
-          { title: "SE@NJU 4.65/5 一般TOEFL,gre 一篇sci二区", last_reply_time: '2019.11.23', author: 'Wilson' },
-          { title: "Top2 3.7/4 MSRA实习+Upenn暑研", last_reply_time: '2019.11.23', author: 'Carney' }
+          { title: "2019MSRA实习项目", last_reply_time: '2019.11.23', author: 'Macdonald' },
+          { title: "微软中国实习生内推", last_reply_time: '2019.11.23', author: 'Shaw' },
+          { title: "2020级应届生国内各主要厂商部门介绍", last_reply_time: '2019.11.23', author: 'Wilson' },
+          { title: "商汤实习生项目简介", last_reply_time: '2019.11.23', author: 'Carney' }
         ],
         form: {
           title: '',
@@ -163,22 +163,22 @@
           tofel:null,
           school:null,
         },
-        countries: [{ text: 'Select One', value: null }, 'US', 'UK', 'EU', 'AUS','JAP'],
+        //countries: [{ text: 'Select One', value: null }, 'US', 'UK', 'EU', 'AUS','JAP'],
         schools: [{ text: 'Select One', value: null }, 'OverSea', 'Top2', '985', '211','other schools'],
         show: true
       }
     },
    created(){
-        var name1 =sessionStorage.getItem('name');
-        var title1 =sessionStorage.getItem('title');
-        this.items.push({title:title1,last_reply_time:"2019.11.24",author:name1})
-        console.log(this.items);
+        if(sessionStorage.getItem('items')!=null)
+        this.items=JSON.parse(sessionStorage.getItem('items'))
     },
     methods: {
-      onSubmit() {
-        console.log(this.items);
-        sessionStorage.setItem('name', this.form.name)
-        sessionStorage.setItem('title',this.form.title)
+      onSubmit(evt) {
+        //evt.preventDefault()
+        this.items.push({title:this.form.title,last_reply_time:"2019.11.24",author:this.form.name})
+        var temp=this.items
+        sessionStorage.setItem('items',JSON.stringify(temp))
+        //alert(sessionStorage.getItem('items'))
       },
       onReset(evt) {
         evt.preventDefault()

@@ -32,7 +32,7 @@
                     </b-dropdown-item>
                     <b-dropdown-item to="/domestic">
                         <font-awesome-icon icon="user" />
-                        <span>保研版块</span>
+                        <span>国内版块</span>
                     </b-dropdown-item>
                 </b-nav-item-dropdown>
                 <b-nav-item-dropdown
