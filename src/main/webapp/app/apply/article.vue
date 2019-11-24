@@ -17,6 +17,7 @@
             </b-row>
             <b-row>
                 <b-col lg="30" class="down1">
+                    
                     <p class="display-4">
                          今年5月中旬，CMU INI MSIT—MOB 2017Fall 届全部毕业，终于可以到处轻松一下了。回顾在CMU INI MSIT—MOB的求学经历，主要收获2点：1学到知识，2找到工作。大家说进入CMU不是终点、是对多年努力的回报、是新征程的起点、是一段艰辛但收获满满的旅程、是让人视野提升的过程。
                     </p>
@@ -95,10 +96,29 @@
         </div>
     </div>
 </footer>
+
+<!-- test -->
+<div class="container">
+    <p>{{ msg }}</p>
+  </div>
+
     </div>
 </template>
 
 <script>
+  export default {
+      data() {
+      return {
+        msg: '',
+      }
+      },
+        created() {
+  },
+  mounted: function () {
+      this.msg = this.$route.params.key
+      console.log(this.msg)
+    }
+  }
 </script>
 
 <style scoped >
