@@ -1,5 +1,5 @@
 <template>
-<div id="bg">
+<div  id="bg">
     <div class="home row">
         <div class="col-md-9">
             <br>
