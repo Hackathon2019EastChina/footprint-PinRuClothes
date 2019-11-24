@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col>
-                    <h2 class="down font2">CMU INI MSIT—MOB 2017Fall毕业感受</h2>
+                    <h1 class="down font2">{{title}}</h1>
                 </b-col>
             </b-row>
             <b-row>
@@ -12,11 +12,12 @@
                     <div class="mx-2"></div>
                     <font-awesome-icon icon="user" id="icon" class="down1"></font-awesome-icon>
                     <div class="mx-2"></div>
-                    <h6 h2 class="down">>Mr.lin&nbsp;&nbsp;edit on 2019.11.20</h6>
+                    <h2 class="down">{{author}}</h2>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col lg="30" class="down1">
+                    
                     <p class="display-4">
                          今年5月中旬，CMU INI MSIT—MOB 2017Fall 届全部毕业，终于可以到处轻松一下了。回顾在CMU INI MSIT—MOB的求学经历，主要收获2点：1学到知识，2找到工作。大家说进入CMU不是终点、是对多年努力的回报、是新征程的起点、是一段艰辛但收获满满的旅程、是让人视野提升的过程。
                     </p>
@@ -95,10 +96,28 @@
         </div>
     </div>
 </footer>
+
+<!-- test -->
+
     </div>
 </template>
 
 <script>
+  export default {
+      data() {
+      return {
+        title: '',
+        author: '',
+      }
+      },
+        created() {
+  },
+  mounted: function () {
+      this.title = this.$route.params.title
+      this.author = this.$route.params.author
+      console.log(this.title)
+    }
+  }
 </script>
 
 <style scoped >

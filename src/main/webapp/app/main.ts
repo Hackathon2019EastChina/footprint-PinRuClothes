@@ -26,6 +26,7 @@ import AlertService from '@/shared/alert/alert.service';
 import TranslationService from '@/locale/translation.service';
 import ConfigurationService from '@/admin/configuration/configuration.service';
 import BootstrapVue from 'bootstrap-vue';
+import bus from './bus';
 
 Vue.config.productionTip = false;
 config.initVueApp(Vue);
@@ -36,7 +37,7 @@ Vue.use(Vue2Filters);
 Vue.use(BootstrapVue);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('jhi-item-count', JhiItemCountComponent);
-
+Vue.prototype.bus = bus;
 const i18n = config.initI18N(Vue);
 const store = config.initVueXStore(Vue);
 

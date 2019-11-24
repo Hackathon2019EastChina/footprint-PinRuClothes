@@ -72,15 +72,15 @@
             <h3 class="display-9">&nbsp;&nbsp;&nbsp;工作</h3>
             <hr>
             <ul>
-                <li><a href="/domestic/work" target="_blank" rel="noopener" >MSCS@CMU项目申请经验</a></li>
-                <li><a href="/domestic/work" target="_blank" rel="noopener" >Meng@UCB,一年制meng是否值得读</a></li>
-                <li><a href="/domestic/work" target="_blank" rel="noopener" >东海岸与西海岸，不仅是时区差异</a></li>
-                <li><a href="/apply/experience" target="_blank" rel="noopener" >19fall CSphD申请感想</a></li>
+                <li><a href="/domestic/work" target="_blank" rel="noopener" >2019MSRA实习项目</a></li>
+                <li><a href="/domestic/work" target="_blank" rel="noopener" >微软中国实习生内推</a></li>
+                <li><a href="/domestic/work" target="_blank" rel="noopener" >2020级应届生国内各主要厂商部门介绍</a></li>
+                <li><a href="/domestic/work" target="_blank" rel="noopener" >商汤实习生项目简介</a></li>
                 <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">测试你的申请成功几率</a></li>
-                 <li><a href="/domestic/work" target="_blank" rel="noopener" >MSCS@CMU项目申请经验</a></li>
-                <li><a href="/domestic/work" target="_blank" rel="noopener" >Meng@UCB,一年制meng是否值得读</a></li>
-                <li><a href="/domestic/work" target="_blank" rel="noopener" >东海岸与西海岸，不仅是时区差异</a></li>
-                <li><a href="/apply/experience" target="_blank" rel="noopener" >19fall CSphD申请感想</a></li>
+                 <li><a href="/domestic/work" target="_blank" rel="noopener" >2019MSRA实习项目</a></li>
+                <li><a href="/domestic/work" target="_blank" rel="noopener" >微软中国实习生内推</a></li>
+                <li><a href="/domestic/work" target="_blank" rel="noopener" >2020级应届生国内各主要厂商部门介绍</a></li>
+                <li><a href="/domestic/work" target="_blank" rel="noopener" >商汤实习生项目简介</a></li>
                 <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">测试你的申请成功几率</a></li>
             </ul>
             <dd class="my-1"><a class="link1" href="/domestic/work" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击查看更多分享</a></dd>
@@ -89,16 +89,16 @@
             <h3 class="display-9">&nbsp;&nbsp;&nbsp;学习</h3>
             <hr>
             <ul>
-                <li><a href="/domestic/study" target="_blank" rel="noopener">JHipster homepage</a></li>
-                <li><a href="/domestic/study" target="_blank" rel="noopener" >JHipster on Stack Overflow</a></li>
-                <li><a href="/domestic/study" target="_blank" rel="noopener">JHipster bug tracker</a></li>
-                <li><a href="/domestic/study" target="_blank" rel="noopener">JHipster public chat room</a></li>
-                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">follow @java_hipster on Twitter</a></li>
-                 <li><a href="/domestic/study" target="_blank" rel="noopener">JHipster homepage</a></li>
-                <li><a href="/domestic/study" target="_blank" rel="noopener" >JHipster on Stack Overflow</a></li>
-                <li><a href="/domestic/study" target="_blank" rel="noopener">JHipster bug tracker</a></li>
-                <li><a href="/domestic/study" target="_blank" rel="noopener">JHipster public chat room</a></li>
-                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">follow @java_hipster on Twitter</a></li>
+                <li><a href="/domestic/study" target="_blank" rel="noopener">SE@NJU夏令营面试指南</a></li>
+                <li><a href="/domestic/study" target="_blank" rel="noopener" >北大信科,上交软院夏令营感想</a></li>
+                <li><a href="/domestic/study" target="_blank" rel="noopener">国内CV方向较强的实验室介绍</a></li>
+                <li><a href="/domestic/study" target="_blank" rel="noopener">南大lamda组面试感想</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">测试你的申请成功几率</a></li>
+                 <li><a href="/domestic/study" target="_blank" rel="noopener">SE@NJU夏令营面试指南</a></li>
+                <li><a href="/domestic/study" target="_blank" rel="noopener" >北大信科,上交软院夏令营感想</a></li>
+                <li><a href="/domestic/study" target="_blank" rel="noopener">国内CV方向较强的实验室介绍</a></li>
+                <li><a href="/domestic/study" target="_blank" rel="noopener">南大lamda组面试感想</a></li>
+                <li><a href="http://127.0.0.1:5000/" target="_blank" rel="noopener">测试你的申请成功几率</a></li>
             </ul>
             <dd class="my-1"><a class="link1" href="/domestic/study" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击查看更多分享</a></dd>
         </div>

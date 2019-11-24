@@ -2,7 +2,7 @@
   <div id="bg">
     <b-row>
     <b-col>
-      <h2 class="down1">渡洋之行：院校信息</h2>
+      <h2 class="down1">渡洋之行：留学经验</h2>
       <h2>
         <b-button variant="info" class="pull-right down2" v-b-modal.modal-1>发布我的经历</b-button>
         <b-modal id="modal-1" title="你的留学经验">
@@ -57,7 +57,7 @@
     </h2>  </b-col>
     </b-row>
     
-    <b-table striped hover :items="items" class="down"></b-table>
+    <b-table striped hover :items="items" class="down" @row-clicked="art"></b-table>
      <footer id="footer" class="bg-white py-5 font-size-14">
     <div class="container">
         <div class="row">
@@ -155,6 +155,17 @@
           this.show = true
         })
       },
+      art:function(item){
+        this.$router.push({  
+            //path: '/apply/article',   
+            name: 'ArticleComponent',  
+            params: {   
+                title: item.title,
+                author: item.author,   
+            }  
+        })  
+      },
+      
     },
   }
 </script>

@@ -57,7 +57,7 @@
     </h2>  </b-col>
     </b-row>
     
-    <b-table striped hover :items="items" class="down"></b-table>
+    <b-table striped hover :items="items" class="down" @row-clicked="art"></b-table>
      <footer id="footer" class="bg-white py-5 font-size-14">
     <div class="container">
         <div class="row">
@@ -155,8 +155,18 @@
         this.$nextTick(() => {
           this.show = true
         })
-      }
-    },
+      },
+      art:function(item){
+        this.$router.push({  
+            //path: '/apply/article',   
+            name: 'ArticleComponent',  
+            params: {   
+                title: item.title,
+                author: item.author,   
+            }  
+        })  
+      },    
+      },
   }
 </script>
 
