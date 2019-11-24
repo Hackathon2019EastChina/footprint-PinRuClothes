@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col>
-                    <h2 class="down font2">CMU INI MSIT—MOB 2017Fall毕业感受</h2>
+                    <h1 class="down font2">{{title}}</h1>
                 </b-col>
             </b-row>
             <b-row>
@@ -12,7 +12,7 @@
                     <div class="mx-2"></div>
                     <font-awesome-icon icon="user" id="icon" class="down1"></font-awesome-icon>
                     <div class="mx-2"></div>
-                    <h6 h2 class="down">>Mr.lin&nbsp;&nbsp;edit on 2019.11.20</h6>
+                    <h2 class="down">{{author}}</h2>
                 </b-col>
             </b-row>
             <b-row>
@@ -98,9 +98,6 @@
 </footer>
 
 <!-- test -->
-<div class="container">
-    <p>{{ msg }}</p>
-  </div>
 
     </div>
 </template>
@@ -109,14 +106,16 @@
   export default {
       data() {
       return {
-        msg: '',
+        title: '',
+        author: '',
       }
       },
         created() {
   },
   mounted: function () {
-      this.msg = this.$route.params.key
-      console.log(this.msg)
+      this.title = this.$route.params.title
+      this.author = this.$route.params.author
+      console.log(this.title)
     }
   }
 </script>

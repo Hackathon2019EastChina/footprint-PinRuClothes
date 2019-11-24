@@ -155,12 +155,13 @@
           this.show = true
         })
       },
-      art:function(){
+      art:function(item){
         this.$router.push({  
             //path: '/apply/article',   
             name: 'ArticleComponent',  
             params: {   
-                key: 'key',   
+                title: item.title,
+                author: item.author,   
             }  
         })  
       },

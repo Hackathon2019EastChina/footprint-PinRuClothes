@@ -156,10 +156,17 @@
           this.show = true
         })
       },
-      art(){
-        self.location.href="/apply/article"
-      }
-    },
+      art:function(item){
+        this.$router.push({  
+            //path: '/apply/article',   
+            name: 'ArticleComponent',  
+            params: {   
+                title: item.title,
+                author: item.author,   
+            }  
+        })  
+      },    
+      },
   }
 </script>
 
