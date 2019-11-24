@@ -90,7 +90,7 @@
         </b-modal>
     </h2>  </b-col>
     </b-row>
-    <b-table striped hover :items="items" class="down"@row-clicked="art"></b-table>
+    <b-table striped hover :items="items" class="down" @row-clicked="art"></b-table>
      <footer id="footer" class="bg-white py-5 font-size-14">
     <div class="container">
         <div class="row">
